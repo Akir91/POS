@@ -2,6 +2,7 @@ using POS.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration; 
+
 // Add services to the container.
 builder.Services.AddInjectionInfraestructure(Configuration); 
 

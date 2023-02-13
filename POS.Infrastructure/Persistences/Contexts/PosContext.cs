@@ -58,7 +58,7 @@ public partial class PosContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasAnnotation("Relational:Collation", "Modern_Spanish_CI_AS");
-        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly();
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
 
         OnModelCreatingPartial(modelBuilder);
